@@ -24,12 +24,12 @@ function newItem (url, left, bottom) {
     })
 }
 
-let horizon = window.innerHeight
+let horizon = window.innerHeight / 1.75
 let skyHeight = window.innerHeight-horizon
-let grassHeight = skyHeight-horizon
+let grassHeight = horizon
 
 tile('assets/sky.png', 0, horizon, window.innerWidth/100, skyHeight/100)
-tile('assets/grass.png', 0, 0, horizon, window.innerWidth/100, grassHeight/100)
+tile('assets/grass.png', 0, 0, window.innerWidth/100, grassHeight/100)
 
 newItem('assets/green-character.gif', 100, 100)
 newItem('assets/tree.png', 200, 300)
